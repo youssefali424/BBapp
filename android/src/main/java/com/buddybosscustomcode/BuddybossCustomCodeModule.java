@@ -11,6 +11,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
 import android.app.Application;
+import com.facebook.react.ReactPackage;
+import java.util.List;
 
 @ReactModule(name = BuddybossCustomCodeModule.NAME)
 public class BuddybossCustomCodeModule extends ReactContextBaseJavaModule {
@@ -38,6 +40,8 @@ public class BuddybossCustomCodeModule extends ReactContextBaseJavaModule {
 
     public static void onNewIntent(Activity activity, Intent intent) {}
 
+    public static void getPackages(List<ReactPackage> packages) {}
+    
     // Here you can write your own custom native modules to use in your custom repo
     // Below is an example of a simple method to multiply two numbers
     // See https://reactnative.dev/docs/native-modules-android for more information
