@@ -1,3 +1,16 @@
+import ProfileCustomScreen from "./components/ProfileCustomScreen";
+
 export const applyCustomCode = (externalCodeSetup: any) => {
-	// call custom code api here
+  externalCodeSetup.navigationApi.addNavigationRoute(
+    "book",
+    "BookScreen",
+    ProfileCustomScreen,
+    "All"
+  );
+  externalCodeSetup.navigationApi.addNavigationRoute(
+    "book",
+    "BookScreen",
+    ProfileCustomScreen,
+    "Main"
+  );
 };
